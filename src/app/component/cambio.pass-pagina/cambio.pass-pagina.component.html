@@ -1,0 +1,18 @@
+<body>
+<div class="container">
+<form>
+    <label>Contraseña actual:</label>
+    <input  class="input-field" type="text" name="campo1" [(ngModel)]="pass.campo1" required>
+    <br>
+    <label>Nueva contraseña:</label>
+    <input  class="input-field"  type="text" name="campo2" [(ngModel)]="pass.campo2" required>
+    <br>
+    <label>Confirmar contraseña:</label>
+    <input class="input-field"  type="text" name="campo3" [(ngModel)]="pass.campo3" required>
+    <br><br>
+    <div align="center">
+    <button class="btn-success" (click) = "cambiar_pass()" [disabled]="!validarCampos()">Cambiar contraseña</button>
+    </div>
+</form>
+</div>
+</body>

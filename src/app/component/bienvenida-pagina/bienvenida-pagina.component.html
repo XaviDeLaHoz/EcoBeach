@@ -1,0 +1,24 @@
+<body>
+<br> <br> <br> 
+<div align="center"> 
+<h3>Eventos creados por los usuarios: </h3></div>
+
+<!-- Listar Eventos -->
+    <div>
+        <br>
+        <div class="container">
+        <tbody>
+            <div align="center" class="filas">
+                <div *ngFor="let reg2 of datos_evento" class="evento">
+                    <br>
+                    <img src="assets/event.png" alt="Imagen del evento" class="evento-image">
+                    <h4>{{reg2.nombre}}</h4>
+                    <p>{{reg2.descripcion}}</p>
+                    <button type="button" class="btn-success" (click)="datos_evento_pagina(reg2.ideventos_creados)">Ver</button>
+                </div>
+            </div>
+        </tbody> 
+        </div>
+    </div>
+</body>
+<!-- Listar Eventos -->

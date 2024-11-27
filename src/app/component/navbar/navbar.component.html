@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="btn-menu" *ngIf="verificar_sesion()">
+          <label for="btn-menu">☰</label>
+        </div> 
+        <div class="logo">
+          <h1>EcoBeach</h1>
+        </div>
+        <nav class="menu" *ngIf="verificar_sesion()">
+          <a (click)="bienvenida_pagina()">Inicio</a>
+          <a (click)="crear_evento_pagina()">Crear Evento</a>
+          <a (click)="eventos_creados_pagina()">Eventos Creados</a>
+          <a (click)="eventos_unidos_pagina()">Eventos Unidos</a>
+        </nav>
+      </div>
+    </header>
+    <header class="header" *ngIf="!verificar_sesion()">
+        <a href="#" class="logotipo"></a>
+          <nav class="navbar">
+        
+          </nav>
+    </header>
+    
+    <div class="capa"></div>
+
+    <!-- ------------- -->
+    
+    <input type="checkbox" id="btn-menu" [(ngModel)]="menu_check">
+    <div class="container-menu" *ngIf="verificar_sesion()">
+      <div class="cont-menu">
+        <nav>
+          <br>
+          <br>
+          <hr>
+          <div *ngIf = "verificar_sesion()" class="content_profile">
+            <div class="img_profile">
+              <img *ngIf="verificar_sesion()" src="assets/user2.png">
+            </div>
+            <div class="name_profile">
+              <label class="nombre_user">{{datos_user_temp.nombres}} {{datos_user_temp.apellidos}}</label>
+            </div>
+          </div>       
+          <hr>
+          <a (click) = "ajustes_pagina()">Ajustes</a>
+          <a (click) = "cerrar_sesion()">Cerrar sesión</a>
+        </nav>
+        <label for="btn-menu" class="btn-close">✖️</label>
+      </div>
+    </div>
+  </body>
+</html>

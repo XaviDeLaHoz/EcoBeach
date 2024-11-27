@@ -1,0 +1,74 @@
+/*HTML*/
+body {
+  background-image: url('src/assets/2.jpg');
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Fallback en caso de que la imagen no se cargue */
+}
+
+.login-container {
+  font-family: 'Arial', sans-serif;
+  width: 450px; /* Ajusta el ancho del contenedor según tus necesidades */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+   border: 2px solid #2889a7;
+  
+}
+
+.login-container h3 {
+  text-align: center; /* Ajusta el espacio entre el h3 y los input fields */
+}
+
+
+.buttons button {
+  margin: 0 15px; /* Aumenté el margen */
+}
+
+
+
+.btn-success {
+  background-color: #11869683;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px; /* Aumenté el radio de borde para hacerlo más ovalado */
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #214588;
+  transform: scale(1.05); /* Añadí una transformación para hacerlo un poco más grande en hover */
+}
+
+.header-image {
+  width: 30%; /* Ajusta el ancho según tus necesidades */
+  max-height: 150px; /* Ajusta la altura máxima según tus necesidades */
+  object-fit: cover; /* Ajusta el método de ajuste de la imagen */
+  border-radius: 10px; /* Ajusta el radio de borde según tus necesidades */
+  margin-bottom: 20px; /* Ajusta el espacio entre la imagen y los campos de entrada */
+  display: block;
+  margin: 20px auto;
+}
+
+
+
+/*HTML*/

@@ -1,0 +1,117 @@
+.filas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+  
+.evento {
+  width: 300px;
+  margin: 10px;
+  padding: 50px;
+  border: 1px solid #111111;
+  text-align: center;
+}
+
+/*----------------------------------*/
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body{
+    	
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url('src/assets/imagen1.jpg') ;
+		height: 1000px;
+    width: 100%;
+	    
+}
+
+.container {
+  font-style: Script;
+ 
+}
+
+.evento {
+  max-width: 600px;
+  margin: 40px;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(12, 12, 12, 0.1);
+  border-radius: 20px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.404);
+  height: 300px;
+  line-height: 0.7;
+}
+
+.evento-image {
+  max-width: 40%; /* Ajusta según tus necesidades */
+  height: auto; /* Para mantener la proporción de la imagen */
+  border-radius: 10px; /* O el valor que desees */
+}
+h4 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+p{
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+  font: bold;
+}
+
+.btn-success {
+  background-color: #11869683;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px; /* Aumenté el radio de borde para hacerlo más ovalado */
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #214588;
+  transform: scale(1.05); /* Añadí una transformación para hacerlo un poco más grande en hover */
+}
+
+h3 {
+  font-size: 30px;
+  color: #0e0d0d;
+  margin-bottom: 20px;
+}
+/*----------------------------------*/

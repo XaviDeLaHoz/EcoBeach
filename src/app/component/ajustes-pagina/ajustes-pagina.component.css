@@ -1,0 +1,113 @@
+.content {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 30px;
+  margin: 20px;
+  
+}
+
+.input-imagen{
+  display: none;
+}
+
+h3{
+  font-family: Arial, sans-serif;
+  justify-content: center;
+}
+
+.img_content {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+img {
+  border-radius: 100%;
+  height: 400px;
+  width: 400px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+
+.img_content:hover .label-file::before {
+  opacity: 1;
+}
+
+/*-----------------------------*/
+
+body {
+  justify-content: center;
+  align-items: center;
+  background-image: url('src/assets/imagen1.jpg');
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-size: cover; /* Ajusta según tus necesidades */
+}
+
+div {
+  margin-bottom: 40px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 100px;
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+input[type="text"]:disabled {
+  background-color: #adadad;
+}
+
+.h1 {
+  text-align: center;
+
+}
+
+.btn-success {
+  background-color: #11869683;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px; /* Aumenté el radio de borde para hacerlo más ovalado */
+  transition: background-color 0.3s ease;
+  margin-right: 50px;
+
+}
+
+.btn-success:hover {
+  background-color: #214588;
+  transform: scale(1.05); /* Añadí una transformación para hacerlo un poco más grande en hover */
+}
+
+
+
+
+
+
+
+

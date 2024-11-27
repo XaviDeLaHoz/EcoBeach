@@ -1,0 +1,34 @@
+<body>
+
+<div class="html-container">
+    <div class="container">
+        
+        <h1>Bienvenido a Ecobeach</h1>
+        <br>
+    
+        <div class="buttons">
+            <button type="button" class="btn-success" (click)="login_pagina()">Iniciar sesión</button>
+            <button type="button" class="btn-success" (click)="mostrarModal()">Registrarse</button>
+        </div>
+    </div>
+</div>
+    <!-- Modal -->
+    <div class="modal" >
+        <div class="modal-content">
+            <span class="close" (click)="cerrarModal()">&times;</span>
+            <div align="center">
+            <h3>REGISTRO</h3></div>
+            <label>Usuario:</label>
+            <input type="text" name="usuario" [(ngModel)]="usuario_model.usuario" required><br><br>
+            <label>Contraseña: </label><input type="text" name="contraseña" [(ngModel)]="usuario_model.pass" required><br><br>
+            <label>Nombres: </label><input type="text" name="nombres" [(ngModel)]="usuario_model.nombres" required><br><br>
+            <label>Apellidos: </label><input type="text" name="apellidos" [(ngModel)]="usuario_model.apellidos" required><br><br>
+            <label>Teléfono: </label><input type="text" name="telefono" [(ngModel)]="usuario_model.telefono" required><br><br>
+            <label>Correo: </label><input type="text" name="correo" [(ngModel)]="usuario_model.correo" required><br><br>   
+            <div align="center">
+                <button type="button" class="btn-success" (click)= "CrearUsuario(usuario_model)">Registrarse</button>
+            </div> 
+        </div>
+    </div>
+</body>
+<!-- Modal -->

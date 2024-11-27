@@ -1,0 +1,41 @@
+<body>
+<div class="container">
+<form action="">
+    <div>
+        <label>Nombre del evento:</label>
+        <br>
+        <input type="text" name="Nombre_evento" [(ngModel)]="evento_model.evento_nombre">
+    </div>
+    <div>
+        <label>Fecha de inicio:</label>
+        <br>
+        <input type="date" name="fecha_ini_evento" [(ngModel)]="evento_fecha_ini">
+    </div>
+    <div>
+        <label>Hora de inicio:</label>
+        <br>
+        <input type="time" name="hora_ini_evento" [(ngModel)]="evento_hora_ini">
+    </div>
+    <div>
+        <label>Fecha de finalización:</label>
+        <br>
+        <input type="date" name="fecha_fini_evento" [(ngModel)]="evento_fecha_fini">
+    </div>
+    <div>
+        <label>Hora de finalización:</label>
+        <br>
+        <input type="time" name="hora_fini_evento" [(ngModel)]="evento_hora_fini">
+    </div>
+    <div>
+        <label>Ubicación:</label>
+        <br>
+        <textarea id="descripcion" name="descripcion_evento" rows="4" cols="50" [(ngModel)]="evento_model.evento_descrip" style="resize: none;"></textarea>
+    </div>
+    <div align="center">
+        <br>
+        <button type="button" class="btn-success" name="boton_evento" (click)= "AgregarEvento(evento_model)">Publicar evento</button>
+    </div>
+</form>
+</div>
+</body>
+

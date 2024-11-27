@@ -1,0 +1,17 @@
+<body>
+<div *ngIf = "datos_open">
+    <div align="center "*ngFor="let reg of dato_evento" class="modal-content">
+        <br><br><br><br>        
+        <h2>{{ reg.nombre }}</h2>
+        <p> {{ reg.descripcion }}</p>
+        <p>Fecha y hora de inicio: {{ fecha_ini }}</p>
+        <p>Fecha y hora de finalización: {{ fecha_fini }}</p>
+        <br>
+        <div  align="center">
+            <button class="btn-success" *ngIf = "tipo_evento == 'D'" type="button" (click)="unirse_evento()">Unirse</button>
+            <button class="btn-success" *ngIf = "tipo_evento == 'C'" type="button" (click)="cancelar_evento()">Cancelar Evento</button>
+            <button  class="btn-success" *ngIf = "tipo_evento == 'U'" type="button" (click)="cancelar_asistencia()">Cancelar Asistencia</button>
+        </div> 
+    </div>
+</div> 
+</body>

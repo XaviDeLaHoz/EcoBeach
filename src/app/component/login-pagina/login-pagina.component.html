@@ -1,0 +1,15 @@
+<body>
+<div class="login-container">
+    <img src="assets/user2.png" alt="Imagen de encabezado" class="header-image">
+    Usuario
+    <input class="input-field" type="text" name="cuenta_usuario" [(ngModel)]="cuenta_model.usuario">
+    <br><br>
+    Contraseña
+    <input class="input-field" type="password" name="contraseña_usuario" [(ngModel)]="cuenta_model.pass">
+    <br><br>
+    <div align="center" class="button">
+    <button class="login-button" type="button" class="btn-success" (click)="login_sesion(cuenta_model)">Iniciar sesión</button>
+    </div>
+</div>
+</body>
+

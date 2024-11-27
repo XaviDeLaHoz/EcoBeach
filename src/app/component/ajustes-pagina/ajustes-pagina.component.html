@@ -1,0 +1,44 @@
+<body>
+    
+<div >
+    <div align="center">
+    <h1>Actualizar datos:</h1><br></div>
+    <div class="content">
+        <div class="img_content">                  
+            <input type="file" class="input-imagen" id="input-imagen" accept="image/*">
+            <label for = "input-imagen" class = "label-file">
+                <img class="imagen" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">  
+            </label>
+        </div>
+        <div class="text_content">
+            <div>
+                <label>Usuario:</label>
+                <input type="text" [(ngModel)]="datos_usuario.usuario" disabled>
+            </div>
+            <div>
+                <label>Nombres:</label>
+                <input type="text" placeholder="Nombres" [(ngModel)]="datos_usuario.nombres" required>
+            </div>
+            <div>
+                <label>Apellidos:</label>
+                <input type="text" placeholder="Apellidos" [(ngModel)]="datos_usuario.apellidos" required>
+            </div>
+            <div>
+                <label>Teléfono:</label>
+                <input type="text" placeholder="Teléfono" [(ngModel)]="datos_usuario.telefono" required>
+            </div>
+            <div>
+                <label>Correo:</label>
+                <input type="text" placeholder="Correo" [(ngModel)]="datos_usuario.correo" required>
+            </div>
+        </div>             
+    </div> 
+    <div align="center "class="button-content">
+    <button class="btn-success"  (click) = "cambio_pass_pagina()">¿Olvidaste tu contraseña?</button>
+    <button class="btn-success" (click) = "actualizarUsuario()">Actualizar</button> 
+</div>  
+</div>
+
+
+</body> 
+
