@@ -1,0 +1,64 @@
+/*Drop a todas las tablas*/
+
+DROP TABLE eventos_unidos;
+DROP TABLE cuentas_usuarios;
+DROP TABLE eventos_creados;
+
+
+/*--------------------------------------------------------*/
+/*Creación de tablas*/
+
+/*Crear tabla 'cuentas_usuarios'*/
+
+CREATE TABLE cuentas_usuarios (
+  idcuentas_usuarios INT NOT NULL AUTO_INCREMENT,
+  usuario VARCHAR(20) NOT NULL,
+  contraseña VARCHAR(20) NOT NULL,
+  nombres VARCHAR(20) NOT NULL,
+  apellidos VARCHAR(20) NOT NULL,
+  telefono VARCHAR(15) NOT NULL,
+  correo VARCHAR(30) NOT NULL,
+  PRIMARY KEY (idcuentas_usuarios)
+);
+
+/*--------------------------------------------------------*/
+
+/*Crear tabla 'eventos_creados'*/
+
+CREATE TABLE eventos_creados (
+  ideventos_creados INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(20) NOT NULL,
+  descripcion VARCHAR(100) NOT NULL,
+  estado VARCHAR(1) NOT NULL,
+  fecha_inicio TIMESTAMP NOT NULL,
+  fecha_finalizacion DATETIME NOT NULL,
+  PRIMARY KEY (ideventos_creados)
+);
+
+/*-------------------------------------------------------*/
+
+/*Crear tabla 'eventos_unidos'*/
+
+CREATE TABLE eventos_unidos (
+  ideventos_unidos INT NOT NULL AUTO_INCREMENT,
+  estado VARCHAR(1) NOT NULL,
+  cuentas_usuarios_idcuentas_usuarios INT NOT NULL,
+  eventos_creados_ideventos_creados INT NOT NULL,
+  PRIMARY KEY (ideventos_unidos),
+  FOREIGN KEY (cuentas_usuarios_idcuentas_usuarios) REFERENCES cuentas_usuarios (idcuentas_usuarios),
+  FOREIGN KEY (eventos_creados_ideventos_creados) REFERENCES eventos_creados (ideventos_creados)
+);
+
+/*-------------------------------------------------------*/
+
+
+/*Crear tabla 'eventos_me'*/
+
+CREATE TABLE eventos_me (
+  ideventos_me INT NOT NULL AUTO_INCREMENT,
+  cuentas_usuarios_idcuentas_usuarios INT NOT NULL,
+  eventos_creados_ideventos_creados INT NOT NULL,
+  PRIMARY KEY (ideventos_me),
+  FOREIGN KEY (cuentas_usuarios_idcuentas_usuarios) REFERENCES cuentas_usuarios (idcuentas_usuarios),
+  FOREIGN KEY (eventos_creados_ideventos_creados) REFERENCES eventos_creados (ideventos_creados)
+);
