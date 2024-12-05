@@ -5,7 +5,8 @@ La plataforma incluirá funcionalidades como el registro de usuarios, creación 
 
 
 # Crédito 
-
--Xavier Andrés De La Hoz Salas
--Jaider Jose Gil Guzman
--Vanessa Paola Romero Domínguez
+<br>
+Este proyecto fue realizado el semestre 2023-2 de mi carrera universitaria. colaboré en su momento en gran parte de la lógica y el código del programa junto con mis compañeros de clases:<br>
+-Xavier Andrés De La Hoz Salas.<br>
+-Jaider Jose Gil Guzman.<br>
+-Vanessa Paola Romero Domínguez.<br>
